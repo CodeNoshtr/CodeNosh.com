@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeNosh | Profesyonel Web Çözümleri</title>
+    <title>CodeNosh | حلول ويب احترافية</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
-        /* ===== Global Styles ===== */
+        /* ===== المتغيرات العامة ===== */
         :root {
             --primary-color: #2563eb;
             --secondary-color: #1e40af;
@@ -31,7 +31,7 @@
         }
 
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Tajawal', sans-serif;
             color: var(--text-color);
             background-color: var(--light-color);
             line-height: 1.6;
@@ -60,11 +60,11 @@
         }
 
         .section {
-            padding: 80px 0;
+            padding: 100px 0;
         }
 
         .section-title {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             font-weight: 700;
             margin-bottom: 1.5rem;
             text-align: center;
@@ -75,31 +75,32 @@
         .section-title::after {
             content: '';
             display: block;
-            width: 80px;
-            height: 4px;
+            width: 100px;
+            height: 5px;
             background: var(--primary-color);
-            margin: 0.5rem auto;
+            margin: 1rem auto;
             border-radius: 2px;
         }
 
         .section-subtitle {
-            font-size: 1.1rem;
+            font-size: 1.3rem;
             color: var(--text-light);
             text-align: center;
-            max-width: 700px;
-            margin: 0 auto 3rem;
+            max-width: 800px;
+            margin: 0 auto 4rem;
+            line-height: 1.8;
         }
 
         .btn {
             display: inline-block;
-            padding: 12px 24px;
+            padding: 15px 30px;
             border-radius: var(--border-radius);
-            font-weight: 500;
+            font-weight: 600;
             text-align: center;
             cursor: pointer;
             transition: var(--transition);
             border: none;
-            font-size: 1rem;
+            font-size: 1.1rem;
         }
 
         .btn-primary {
@@ -109,8 +110,8 @@
 
         .btn-primary:hover {
             background-color: var(--secondary-color);
-            transform: translateY(-2px);
-            box-shadow: var(--box-shadow);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
         }
 
         .btn-outline {
@@ -122,8 +123,8 @@
         .btn-outline:hover {
             background-color: var(--primary-color);
             color: white;
-            transform: translateY(-2px);
-            box-shadow: var(--box-shadow);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
         }
 
         .text-center {
@@ -136,10 +137,10 @@
         .mb-4 { margin-bottom: 2rem; }
         .mb-5 { margin-bottom: 3rem; }
 
-        /* ===== Header Styles ===== */
+        /* ===== تنسيقات الهيدر ===== */
         header {
             background-color: white;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
             position: fixed;
             width: 100%;
             top: 0;
@@ -149,7 +150,7 @@
         }
 
         .header-scrolled {
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.15);
         }
 
         .navbar {
@@ -160,36 +161,37 @@
         }
 
         .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
+            font-size: 2rem;
+            font-weight: 800;
             color: var(--primary-color);
             display: flex;
             align-items: center;
         }
 
         .logo i {
-            margin-right: 0.5rem;
-            font-size: 2rem;
+            margin-left: 0.5rem;
+            font-size: 2.2rem;
         }
 
         .nav-links {
             display: flex;
-            gap: 2rem;
+            gap: 2.5rem;
         }
 
         .nav-links a {
-            font-weight: 500;
+            font-weight: 600;
             position: relative;
             padding: 0.5rem 0;
+            font-size: 1.1rem;
         }
 
         .nav-links a::after {
             content: '';
             position: absolute;
             bottom: 0;
-            left: 0;
+            right: 0;
             width: 0;
-            height: 2px;
+            height: 3px;
             background-color: var(--primary-color);
             transition: var(--transition);
         }
@@ -202,16 +204,16 @@
             display: none;
             background: none;
             border: none;
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             color: var(--dark-color);
             cursor: pointer;
         }
 
-        /* ===== Hero Section ===== */
+        /* ===== قسم الهيرو ===== */
         .hero {
             background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
             color: white;
-            padding: 180px 0 100px;
+            padding: 200px 0 120px;
             position: relative;
             overflow: hidden;
         }
@@ -230,35 +232,37 @@
         .hero-content {
             position: relative;
             z-index: 1;
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             text-align: center;
         }
 
         .hero-title {
-            font-size: 3.5rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 2rem;
             line-height: 1.2;
         }
 
         .hero-subtitle {
-            font-size: 1.2rem;
-            margin-bottom: 2.5rem;
+            font-size: 1.5rem;
+            margin-bottom: 3rem;
             opacity: 0.9;
+            line-height: 1.8;
         }
 
         .hero-btns {
             display: flex;
-            gap: 1rem;
+            gap: 1.5rem;
             justify-content: center;
+            margin-bottom: 4rem;
         }
 
         .hero-stats {
             display: flex;
             justify-content: center;
-            gap: 3rem;
-            margin-top: 4rem;
+            gap: 4rem;
+            margin-top: 5rem;
             flex-wrap: wrap;
         }
 
@@ -267,81 +271,112 @@
         }
 
         .stat-number {
-            font-size: 2.5rem;
-            font-weight: 700;
+            font-size: 3rem;
+            font-weight: 800;
             margin-bottom: 0.5rem;
             color: white;
         }
 
         .stat-text {
-            font-size: 1rem;
-            opacity: 0.8;
+            font-size: 1.2rem;
+            opacity: 0.9;
         }
 
-        /* ===== Services Section ===== */
+        /* ===== قسم الخدمات ===== */
         .services {
             background-color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .services::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+            z-index: 0;
         }
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            position: relative;
+            z-index: 1;
         }
 
         .service-card {
             background-color: white;
             border-radius: var(--border-radius);
-            padding: 2rem;
+            padding: 2.5rem;
             box-shadow: var(--box-shadow);
             transition: var(--transition);
-            border: 1px solid rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            text-align: right;
         }
 
         .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            transform: translateY(-15px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         }
 
         .service-icon {
-            font-size: 2.5rem;
+            font-size: 3.5rem;
             color: var(--primary-color);
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
         }
 
         .service-title {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
             color: var(--dark-color);
         }
 
         .service-description {
             color: var(--text-light);
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
         }
 
-        /* ===== Portfolio Section ===== */
+        /* ===== قسم الأعمال ===== */
         .portfolio {
             background-color: var(--light-color);
+            position: relative;
+        }
+
+        .portfolio::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+            z-index: 0;
         }
 
         .portfolio-filter {
             display: flex;
             justify-content: center;
-            gap: 1rem;
-            margin-bottom: 2rem;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
             flex-wrap: wrap;
         }
 
         .filter-btn {
-            padding: 8px 16px;
-            border-radius: 20px;
+            padding: 10px 20px;
+            border-radius: 30px;
             background-color: white;
             border: 1px solid #e5e7eb;
             cursor: pointer;
             transition: var(--transition);
-            font-weight: 500;
+            font-weight: 600;
+            font-size: 1.1rem;
         }
 
         .filter-btn.active, .filter-btn:hover {
@@ -352,8 +387,10 @@
 
         .portfolio-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 2rem;
+            position: relative;
+            z-index: 1;
         }
 
         .portfolio-item {
@@ -361,10 +398,11 @@
             border-radius: var(--border-radius);
             overflow: hidden;
             box-shadow: var(--box-shadow);
+            transition: var(--transition);
         }
 
         .portfolio-img {
-            height: 250px;
+            height: 300px;
             width: 100%;
             object-fit: cover;
             transition: var(--transition);
@@ -383,7 +421,7 @@
             align-items: center;
             opacity: 0;
             transition: var(--transition);
-            padding: 1.5rem;
+            padding: 2rem;
             text-align: center;
             color: white;
         }
@@ -393,110 +431,53 @@
         }
 
         .portfolio-item:hover .portfolio-img {
-            transform: scale(1.05);
+            transform: scale(1.1);
         }
 
         .portfolio-title {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
         }
 
         .portfolio-category {
             display: inline-block;
-            padding: 4px 12px;
+            padding: 6px 15px;
             background-color: rgba(255, 255, 255, 0.2);
-            border-radius: 20px;
-            font-size: 0.8rem;
-            margin-bottom: 1rem;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
         }
 
-        /* ===== Team Section ===== */
-        .team {
-            background-color: white;
-        }
-
-        .team-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-        }
-
-        .team-member {
-            background-color: white;
-            border-radius: var(--border-radius);
-            overflow: hidden;
-            box-shadow: var(--box-shadow);
-            transition: var(--transition);
-        }
-
-        .team-member:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-        }
-
-        .team-img {
-            height: 250px;
-            width: 100%;
-            object-fit: cover;
-        }
-
-        .team-info {
-            padding: 1.5rem;
-            text-align: center;
-        }
-
-        .team-name {
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-bottom: 0.3rem;
-            color: var(--dark-color);
-        }
-
-        .team-position {
-            color: var(--primary-color);
-            font-weight: 500;
-            margin-bottom: 1rem;
-            display: block;
-        }
-
-        .team-social {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-        }
-
-        .team-social a {
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            background-color: #f3f4f6;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: var(--transition);
-        }
-
-        .team-social a:hover {
-            background-color: var(--primary-color);
-            color: white;
-        }
-
-        /* ===== Testimonials Section ===== */
+        /* ===== قسم العملاء ===== */
         .testimonials {
-            background-color: var(--light-color);
+            background-color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .testimonials::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+            z-index: 0;
         }
 
         .testimonial-slider {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             position: relative;
+            z-index: 1;
         }
 
         .testimonial-slide {
             background-color: white;
             border-radius: var(--border-radius);
-            padding: 2rem;
+            padding: 3rem;
             box-shadow: var(--box-shadow);
             text-align: center;
             display: none;
@@ -513,51 +494,54 @@
         }
 
         .testimonial-content {
-            font-size: 1.1rem;
+            font-size: 1.3rem;
             font-style: italic;
             color: var(--text-color);
-            margin-bottom: 1.5rem;
-            line-height: 1.8;
+            margin-bottom: 2rem;
+            line-height: 1.9;
         }
 
         .testimonial-author {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 1rem;
+            gap: 1.5rem;
+            flex-direction: row-reverse;
         }
 
         .author-img {
-            width: 60px;
-            height: 60px;
+            width: 80px;
+            height: 80px;
             border-radius: 50%;
             object-fit: cover;
+            border: 3px solid var(--primary-color);
         }
 
         .author-info {
-            text-align: left;
+            text-align: right;
         }
 
         .author-name {
-            font-weight: 600;
+            font-weight: 700;
             color: var(--dark-color);
+            font-size: 1.3rem;
         }
 
         .author-position {
             color: var(--text-light);
-            font-size: 0.9rem;
+            font-size: 1rem;
         }
 
         .testimonial-nav {
             display: flex;
             justify-content: center;
             gap: 1rem;
-            margin-top: 2rem;
+            margin-top: 3rem;
         }
 
         .testimonial-dot {
-            width: 12px;
-            height: 12px;
+            width: 15px;
+            height: 15px;
             border-radius: 50%;
             background-color: #e5e7eb;
             cursor: pointer;
@@ -566,23 +550,39 @@
 
         .testimonial-dot.active {
             background-color: var(--primary-color);
+            transform: scale(1.2);
         }
 
-        /* ===== Pricing Section ===== */
+        /* ===== قسم الأسعار ===== */
         .pricing {
-            background-color: white;
+            background-color: var(--light-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pricing::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+            z-index: 0;
         }
 
         .pricing-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            position: relative;
+            z-index: 1;
         }
 
         .pricing-card {
             background-color: white;
             border-radius: var(--border-radius);
-            padding: 2.5rem 2rem;
+            padding: 3rem 2.5rem;
             box-shadow: var(--box-shadow);
             transition: var(--transition);
             border: 1px solid #e5e7eb;
@@ -596,66 +596,82 @@
         }
 
         .pricing-card.featured::before {
-            content: 'Popüler';
+            content: 'الأكثر طلباً';
             position: absolute;
             top: 0;
-            right: 20px;
+            left: 20px;
             transform: translateY(-50%);
             background-color: var(--primary-color);
             color: white;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 500;
+            padding: 6px 15px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 600;
         }
 
         .pricing-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            transform: translateY(-15px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         }
 
         .pricing-name {
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
             color: var(--dark-color);
         }
 
         .pricing-price {
-            font-size: 2.5rem;
-            font-weight: 700;
+            font-size: 3rem;
+            font-weight: 800;
             color: var(--primary-color);
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
         }
 
         .pricing-price span {
-            font-size: 1rem;
-            font-weight: 400;
+            font-size: 1.2rem;
+            font-weight: 500;
             color: var(--text-light);
         }
 
         .pricing-features {
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
         }
 
         .pricing-feature {
-            padding: 0.8rem 0;
+            padding: 1rem 0;
             border-bottom: 1px solid #e5e7eb;
+            font-size: 1.1rem;
         }
 
         .pricing-feature:last-child {
             border-bottom: none;
         }
 
-        /* ===== Blog Section ===== */
+        /* ===== قسم المدونة ===== */
         .blog {
-            background-color: var(--light-color);
+            background-color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .blog::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+            z-index: 0;
         }
 
         .blog-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 3rem;
+            position: relative;
+            z-index: 1;
         }
 
         .blog-card {
@@ -664,28 +680,29 @@
             overflow: hidden;
             box-shadow: var(--box-shadow);
             transition: var(--transition);
+            text-align: right;
         }
 
         .blog-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            transform: translateY(-15px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         }
 
         .blog-img {
-            height: 200px;
+            height: 250px;
             width: 100%;
             object-fit: cover;
         }
 
         .blog-content {
-            padding: 1.5rem;
+            padding: 2rem;
         }
 
         .blog-meta {
             display: flex;
-            gap: 1rem;
-            margin-bottom: 0.8rem;
-            font-size: 0.9rem;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+            font-size: 1rem;
             color: var(--text-light);
         }
 
@@ -696,75 +713,96 @@
         }
 
         .blog-title {
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
             color: var(--dark-color);
+            line-height: 1.4;
         }
 
         .blog-excerpt {
             color: var(--text-light);
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
         }
 
         .read-more {
             color: var(--primary-color);
-            font-weight: 500;
+            font-weight: 600;
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
             transition: var(--transition);
+            font-size: 1.1rem;
         }
 
         .read-more:hover {
-            gap: 0.8rem;
+            gap: 1rem;
         }
 
-        /* ===== Contact Section ===== */
+        /* ===== قسم الاتصال ===== */
         .contact {
-            background-color: white;
+            background-color: var(--light-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+            z-index: 0;
         }
 
         .contact-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 4rem;
+            position: relative;
+            z-index: 1;
         }
 
         .contact-info {
             display: flex;
             flex-direction: column;
-            gap: 2rem;
+            gap: 2.5rem;
         }
 
         .contact-item {
             display: flex;
-            gap: 1rem;
+            gap: 1.5rem;
+            flex-direction: row-reverse;
         }
 
         .contact-icon {
-            width: 50px;
-            height: 50px;
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
             background-color: #e0e7ff;
             color: var(--primary-color);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             flex-shrink: 0;
         }
 
         .contact-text h3 {
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 0.8rem;
             color: var(--dark-color);
         }
 
         .contact-text p, .contact-text a {
             color: var(--text-light);
             transition: var(--transition);
+            font-size: 1.1rem;
         }
 
         .contact-text a:hover {
@@ -772,126 +810,138 @@
         }
 
         .contact-form {
-            background-color: var(--light-color);
-            padding: 2rem;
+            background-color: white;
+            padding: 3rem;
             border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
         }
 
         .form-group {
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
         }
 
         .form-label {
             display: block;
-            margin-bottom: 0.5rem;
-            font-weight: 500;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
             color: var(--dark-color);
+            font-size: 1.1rem;
         }
 
         .form-control {
             width: 100%;
-            padding: 12px 15px;
+            padding: 15px 20px;
             border: 1px solid #e5e7eb;
             border-radius: var(--border-radius);
             font-family: inherit;
-            font-size: 1rem;
+            font-size: 1.1rem;
             transition: var(--transition);
         }
 
         .form-control:focus {
             outline: none;
             border-color: var(--primary-color);
-            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+            box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
         }
 
         textarea.form-control {
-            min-height: 150px;
+            min-height: 180px;
             resize: vertical;
         }
 
-        /* ===== Footer ===== */
+        /* ===== الفوتر ===== */
         footer {
             background-color: var(--dark-color);
             color: white;
-            padding: 5rem 0 2rem;
+            padding: 6rem 0 3rem;
+            position: relative;
         }
 
         .footer-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 3rem;
-            margin-bottom: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 4rem;
+            margin-bottom: 4rem;
+            position: relative;
+            z-index: 1;
         }
 
         .footer-logo {
-            font-size: 1.8rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 2rem;
             display: inline-block;
+            color: white;
         }
 
         .footer-about p {
             color: #d1d5db;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
         }
 
         .footer-social {
             display: flex;
-            gap: 1rem;
+            gap: 1.5rem;
         }
 
         .footer-social a {
-            width: 40px;
-            height: 40px;
+            width: 45px;
+            height: 45px;
             border-radius: 50%;
             background-color: rgba(255, 255, 255, 0.1);
             display: flex;
             align-items: center;
             justify-content: center;
+            font-size: 1.3rem;
             transition: var(--transition);
         }
 
         .footer-social a:hover {
             background-color: var(--primary-color);
-            transform: translateY(-3px);
+            transform: translateY(-5px);
         }
 
         .footer-title {
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
             position: relative;
         }
 
         .footer-title::after {
             content: '';
             position: absolute;
-            bottom: -8px;
-            left: 0;
-            width: 40px;
-            height: 3px;
+            bottom: -10px;
+            right: 0;
+            width: 50px;
+            height: 4px;
             background-color: var(--primary-color);
             border-radius: 2px;
         }
 
         .footer-links li {
-            margin-bottom: 0.8rem;
+            margin-bottom: 1rem;
         }
 
         .footer-links a {
             color: #d1d5db;
             transition: var(--transition);
             display: inline-block;
+            font-size: 1.1rem;
         }
 
         .footer-links a:hover {
             color: var(--primary-color);
-            transform: translateX(5px);
+            transform: translateX(-5px);
         }
 
         .footer-newsletter p {
             color: #d1d5db;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
         }
 
         .newsletter-form {
@@ -900,11 +950,11 @@
 
         .newsletter-input {
             flex: 1;
-            padding: 12px 15px;
+            padding: 15px 20px;
             border: none;
             border-radius: var(--border-radius) 0 0 var(--border-radius);
             font-family: inherit;
-            font-size: 1rem;
+            font-size: 1.1rem;
         }
 
         .newsletter-input:focus {
@@ -915,10 +965,11 @@
             background-color: var(--primary-color);
             color: white;
             border: none;
-            padding: 0 1.5rem;
+            padding: 0 2rem;
             border-radius: 0 var(--border-radius) var(--border-radius) 0;
             cursor: pointer;
             transition: var(--transition);
+            font-size: 1.2rem;
         }
 
         .newsletter-btn:hover {
@@ -927,30 +978,58 @@
 
         .footer-bottom {
             text-align: center;
-            padding-top: 2rem;
+            padding-top: 3rem;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             color: #9ca3af;
-            font-size: 0.9rem;
+            font-size: 1rem;
+            position: relative;
+            z-index: 1;
         }
 
-        /* ===== Responsive Styles ===== */
+        /* ===== التصميم المتجاوب ===== */
+        @media (max-width: 1200px) {
+            .section {
+                padding: 80px 0;
+            }
+            
+            .hero-title {
+                font-size: 3.5rem;
+            }
+        }
+
         @media (max-width: 992px) {
             .section {
-                padding: 60px 0;
+                padding: 70px 0;
+            }
+            
+            .section-title {
+                font-size: 2.5rem;
             }
             
             .hero-title {
                 font-size: 3rem;
             }
+            
+            .hero-subtitle {
+                font-size: 1.3rem;
+            }
+            
+            .service-card, .pricing-card, .blog-card {
+                padding: 2rem;
+            }
         }
 
         @media (max-width: 768px) {
             .section {
-                padding: 50px 0;
+                padding: 60px 0;
             }
             
             .section-title {
-                font-size: 2rem;
+                font-size: 2.2rem;
+            }
+            
+            .section-subtitle {
+                font-size: 1.2rem;
             }
             
             .navbar {
@@ -960,20 +1039,20 @@
             .nav-links {
                 position: fixed;
                 top: 80px;
-                left: -100%;
+                right: -100%;
                 width: 100%;
                 height: calc(100vh - 80px);
                 background-color: white;
                 flex-direction: column;
                 align-items: center;
-                padding: 2rem 0;
-                gap: 1.5rem;
+                padding: 3rem 0;
+                gap: 2rem;
                 transition: var(--transition);
                 box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
             }
             
             .nav-links.active {
-                left: 0;
+                right: 0;
             }
             
             .mobile-menu-btn {
@@ -981,7 +1060,7 @@
             }
             
             .hero {
-                padding: 150px 0 80px;
+                padding: 160px 0 80px;
             }
             
             .hero-title {
@@ -989,12 +1068,12 @@
             }
             
             .hero-subtitle {
-                font-size: 1.1rem;
+                font-size: 1.2rem;
             }
             
             .hero-btns {
                 flex-direction: column;
-                gap: 1rem;
+                gap: 1.5rem;
             }
             
             .btn {
@@ -1004,33 +1083,49 @@
             .pricing-card.featured {
                 transform: none;
             }
-        }
-
-        @media (max-width: 576px) {
-            .section {
-                padding: 40px 0;
-            }
-            
-            .hero-title {
-                font-size: 2rem;
-            }
-            
-            .section-title {
-                font-size: 1.8rem;
-            }
             
             .portfolio-grid, .blog-grid {
                 grid-template-columns: 1fr;
             }
+            
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
         }
 
-        /* ===== Animations ===== */
+        @media (max-width: 576px) {
+            .section {
+                padding: 50px 0;
+            }
+            
+            .hero-title {
+                font-size: 2.2rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .stat-number {
+                font-size: 2.5rem;
+            }
+            
+            .stat-text {
+                font-size: 1rem;
+            }
+            
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ===== الرسوم المتحركة ===== */
         @keyframes float {
             0%, 100% {
                 transform: translateY(0);
             }
             50% {
-                transform: translateY(-10px);
+                transform: translateY(-15px);
             }
         }
 
@@ -1038,7 +1133,7 @@
             animation: float 3s ease-in-out infinite;
         }
 
-        /* ===== Preloader ===== */
+        /* ===== شاشة التحميل ===== */
         .preloader {
             position: fixed;
             top: 0;
@@ -1059,9 +1154,9 @@
         }
 
         .loader {
-            width: 50px;
-            height: 50px;
-            border: 5px solid #e0e7ff;
+            width: 60px;
+            height: 60px;
+            border: 6px solid #e0e7ff;
             border-top-color: var(--primary-color);
             border-radius: 50%;
             animation: spin 1s linear infinite;
@@ -1073,25 +1168,26 @@
             }
         }
 
-        /* ===== Back to Top Button ===== */
+        /* ===== زر العودة للأعلى ===== */
         .back-to-top {
             position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 50px;
-            height: 50px;
+            bottom: 40px;
+            left: 40px;
+            width: 60px;
+            height: 60px;
             background-color: var(--primary-color);
             color: white;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             cursor: pointer;
             opacity: 0;
             visibility: hidden;
             transition: var(--transition);
             z-index: 999;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
 
         .back-to-top.active {
@@ -1106,17 +1202,17 @@
     </style>
 </head>
 <body>
-    <!-- Preloader -->
+    <!-- شاشة التحميل -->
     <div class="preloader">
         <div class="loader"></div>
     </div>
 
-    <!-- Back to Top Button -->
+    <!-- زر العودة للأعلى -->
     <div class="back-to-top">
         <i class="fas fa-arrow-up"></i>
     </div>
 
-    <!-- Header -->
+    <!-- الهيدر -->
     <header id="header">
         <div class="container">
             <nav class="navbar">
@@ -1126,13 +1222,12 @@
                 </a>
                 
                 <ul class="nav-links">
-                    <li><a href="#home">Ana Sayfa</a></li>
-                    <li><a href="#services">Hizmetler</a></li>
-                    <li><a href="#portfolio">Portfolyo</a></li>
-                    <li><a href="#team">Ekip</a></li>
-                    <li><a href="#pricing">Fiyatlandırma</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">İletişim</a></li>
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#services">الخدمات</a></li>
+                    <li><a href="#portfolio">الأعمال</a></li>
+                    <li><a href="#pricing">الأسعار</a></li>
+                    <li><a href="#blog">المدونة</a></li>
+                    <li><a href="#contact">اتصل بنا</a></li>
                 </ul>
                 
                 <button class="mobile-menu-btn">
@@ -1142,216 +1237,216 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- قسم الهيرو -->
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Profesyonel Web Çözümleri</h1>
-                <p class="hero-subtitle">Modern, hızlı ve kullanıcı dostu web siteleri ile dijital varlığınızı güçlendirin</p>
+                <h1 class="hero-title">حلول ويب احترافية لمشروعك القادم</h1>
+                <p class="hero-subtitle">نقدم خدمات تطوير الويب والتطبيقات بجودة عالية وأسعار تنافسية لمساعدة عملك على النمو والازدهار في العالم الرقمي</p>
                 <div class="hero-btns">
-                    <a href="#contact" class="btn btn-primary">Hemen Başlayın</a>
-                    <a href="#services" class="btn btn-outline">Hizmetlerimiz</a>
+                    <a href="#contact" class="btn btn-primary">ابدأ مشروعك الآن</a>
+                    <a href="#services" class="btn btn-outline">استكشف الخدمات</a>
                 </div>
                 
                 <div class="hero-stats">
                     <div class="stat-item">
-                        <div class="stat-number">150+</div>
-                        <div class="stat-text">Tamamlanan Proje</div>
+                        <div class="stat-number">200+</div>
+                        <div class="stat-text">مشروع مكتمل</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">95%</div>
+                        <div class="stat-text">عملاء راضون</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-number">50+</div>
-                        <div class="stat-text">Mutlu Müşteri</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">10+</div>
-                        <div class="stat-text">Uzman Ekip</div>
+                        <div class="stat-text">عميل حول العالم</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- قسم الخدمات -->
     <section class="section services" id="services">
         <div class="container">
-            <h2 class="section-title">Hizmetlerimiz</h2>
-            <p class="section-subtitle">Profesyonel ekibimizle sunduğumuz yüksek kaliteli hizmetler</p>
+            <h2 class="section-title">خدماتنا المتكاملة</h2>
+            <p class="section-subtitle">نقدم مجموعة واسعة من خدمات تطوير الويب والتطبيقات المصممة خصيصًا لتلبية احتياجات عملك</p>
             
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-laptop-code"></i>
                     </div>
-                    <h3 class="service-title">Web Geliştirme</h3>
-                    <p class="service-description">Modern ve ölçeklenebilir web uygulamaları geliştiriyoruz. Kurumsal sitelerden e-ticaret platformlarına kadar her türlü web projesi.</p>
-                    <a href="#" class="btn btn-outline">Detaylar</a>
+                    <h3 class="service-title">تطوير مواقع الويب</h3>
+                    <p class="service-description">تصميم وتطوير مواقع ويب احترافية وسريعة الاستجابة باستخدام أحدث التقنيات مثل HTML5, CSS3, JavaScript لضمان تجربة مستخدم ممتازة.</p>
+                    <a href="#contact" class="btn btn-outline">اطلب الخدمة</a>
                 </div>
                 
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-mobile-alt"></i>
                     </div>
-                    <h3 class="service-title">Mobil Uygulama</h3>
-                    <p class="service-description">iOS ve Android için yerel ve hibrit mobil uygulamalar geliştiriyoruz. Kullanıcı dostu arayüzler ve yüksek performans.</p>
-                    <a href="#" class="btn btn-outline">Detaylar</a>
+                    <h3 class="service-title">تطبيقات الجوال</h3>
+                    <p class="service-description">بناء تطبيقات جوال عالية الجودة لأنظمة iOS و Android باستخدام تقنيات متقدمة تضمن أداءً سلسًا وتجربة مستخدم فريدة.</p>
+                    <a href="#contact" class="btn btn-outline">اطلب الخدمة</a>
                 </div>
                 
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-paint-brush"></i>
+                        <i class="fas fa-store"></i>
                     </div>
-                    <h3 class="service-title">UI/UX Tasarım</h3>
-                    <p class="service-description">Kullanıcı deneyimini ön planda tutan, estetik ve işlevsel arayüz tasarımları oluşturuyoruz.</p>
-                    <a href="#" class="btn btn-outline">Detaylar</a>
+                    <h3 class="service-title">متاجر إلكترونية</h3>
+                    <p class="service-description">تصميم وتطوير متاجر إلكترونية متكاملة مع أنظمة دفع آمنة وإدارة مخزون لمساعدة عملك على تحقيق أقصى مبيعات عبر الإنترنت.</p>
+                    <a href="#contact" class="btn btn-outline">اطلب الخدمة</a>
                 </div>
                 
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-search-dollar"></i>
                     </div>
-                    <h3 class="service-title">SEO Optimizasyon</h3>
-                    <p class="service-description">Arama motorlarında üst sıralarda yer almanız için profesyonel SEO hizmetleri sunuyoruz.</p>
-                    <a href="#" class="btn btn-outline">Detaylar</a>
+                    <h3 class="service-title">تحسين محركات البحث</h3>
+                    <p class="service-description">تحسين موقعك لمحركات البحث لزيادة ظهورك في النتائج الأولى وزيادة حركة الزوار المؤهلين إلى موقعك الإلكتروني.</p>
+                    <a href="#contact" class="btn btn-outline">اطلب الخدمة</a>
                 </div>
                 
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-paint-brush"></i>
                     </div>
-                    <h3 class="service-title">E-Ticaret Çözümleri</h3>
-                    <p class="service-description">Online satışlarınızı artıracak, güvenli ve kullanıcı dostu e-ticaret platformları geliştiriyoruz.</p>
-                    <a href="#" class="btn btn-outline">Detaylar</a>
+                    <h3 class="service-title">تصميم واجهات المستخدم</h3>
+                    <p class="service-description">تصميم واجهات مستخدم جذابة وسهلة الاستخدام تعزز تجربة المستخدم وتزيد من معدلات التحويل لموقعك أو تطبيقك.</p>
+                    <a href="#contact" class="btn btn-outline">اطلب الخدمة</a>
                 </div>
                 
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-server"></i>
                     </div>
-                    <h3 class="service-title">Hosting & Destek</h3>
-                    <p class="service-description">Yüksek performanslı hosting çözümleri ve 7/24 teknik destek hizmetleri sunuyoruz.</p>
-                    <a href="#" class="btn btn-outline">Detaylar</a>
+                    <h3 class="service-title">استضافة وحلول سحابية</h3>
+                    <p class="service-description">تقديم حلول استضافة موثوقة وسريعة مع دعم فني متكامل لضمان أقصى أداء واستقرار لموقعك أو تطبيقك.</p>
+                    <a href="#contact" class="btn btn-outline">اطلب الخدمة</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
+    <!-- قسم الأعمال -->
     <section class="section portfolio" id="portfolio">
         <div class="container">
-            <h2 class="section-title">Portfolyo</h2>
-            <p class="section-subtitle">Gerçekleştirdiğimiz bazı projeleri keşfedin</p>
+            <h2 class="section-title">أعمالنا الأخيرة</h2>
+            <p class="section-subtitle">استكشف بعض المشاريع التي قمنا بتنفيذها لعملائنا الكرام والتي تعكس جودة العمل والإبداع في التنفيذ</p>
             
             <div class="portfolio-filter">
-                <button class="filter-btn active" data-filter="all">Tümü</button>
-                <button class="filter-btn" data-filter="web">Web</button>
-                <button class="filter-btn" data-filter="mobile">Mobil</button>
-                <button class="filter-btn" data-filter="ecommerce">E-Ticaret</button>
-                <button class="filter-btn" data-filter="design">Tasarım</button>
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="web">مواقع ويب</button>
+                <button class="filter-btn" data-filter="mobile">تطبيقات جوال</button>
+                <button class="filter-btn" data-filter="ecommerce">متاجر إلكترونية</button>
             </div>
             
             <div class="portfolio-grid">
                 <div class="portfolio-item" data-category="web">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Web Projesi 1" class="portfolio-img">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="موقع شركة تقنية" class="portfolio-img">
                     <div class="portfolio-overlay">
-                        <h3 class="portfolio-title">Kurumsal Web Sitesi</h3>
-                        <span class="portfolio-category">Web</span>
-                        <a href="#" class="btn btn-primary">Detaylar</a>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item" data-category="mobile">
-                    <img src="https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Mobil Proje 1" class="portfolio-img">
-                    <div class="portfolio-overlay">
-                        <h3 class="portfolio-title">Fitness Uygulaması</h3>
-                        <span class="portfolio-category">Mobil</span>
-                        <a href="#" class="btn btn-primary">Detaylar</a>
+                        <h3 class="portfolio-title">موقع شركة تقنية</h3>
+                        <span class="portfolio-category">موقع ويب</span>
+                        <a href="#" class="btn btn-primary">عرض التفاصيل</a>
                     </div>
                 </div>
                 
                 <div class="portfolio-item" data-category="ecommerce">
-                    <img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="E-Ticaret Projesi 1" class="portfolio-img">
+                    <img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="متجر إلكتروني" class="portfolio-img">
                     <div class="portfolio-overlay">
-                        <h3 class="portfolio-title">Online Mağaza</h3>
-                        <span class="portfolio-category">E-Ticaret</span>
-                        <a href="#" class="btn btn-primary">Detaylar</a>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item" data-category="design">
-                    <img src="https://images.unsplash.com/photo-1541462608143-67571c6738dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Tasarım Projesi 1" class="portfolio-img">
-                    <div class="portfolio-overlay">
-                        <h3 class="portfolio-title">Marka Kimliği Tasarımı</h3>
-                        <span class="portfolio-category">Tasarım</span>
-                        <a href="#" class="btn btn-primary">Detaylar</a>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item" data-category="web">
-                    <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Web Projesi 2" class="portfolio-img">
-                    <div class="portfolio-overlay">
-                        <h3 class="portfolio-title">Yönetim Paneli</h3>
-                        <span class="portfolio-category">Web</span>
-                        <a href="#" class="btn btn-primary">Detaylar</a>
+                        <h3 class="portfolio-title">متجر إلكتروني للموضة</h3>
+                        <span class="portfolio-category">متجر إلكتروني</span>
+                        <a href="#" class="btn btn-primary">عرض التفاصيل</a>
                     </div>
                 </div>
                 
                 <div class="portfolio-item" data-category="mobile">
-                    <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Mobil Proje 2" class="portfolio-img">
+                    <img src="https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="تطبيق رياضي" class="portfolio-img">
                     <div class="portfolio-overlay">
-                        <h3 class="portfolio-title">Sosyal Medya Uygulaması</h3>
-                        <span class="portfolio-category">Mobil</span>
-                        <a href="#" class="btn btn-primary">Detaylar</a>
+                        <h3 class="portfolio-title">تطبيق اللياقة البدنية</h3>
+                        <span class="portfolio-category">تطبيق جوال</span>
+                        <a href="#" class="btn btn-primary">عرض التفاصيل</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="web">
+                    <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="منصة تعليمية" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">منصة تعليم إلكتروني</h3>
+                        <span class="portfolio-category">موقع ويب</span>
+                        <a href="#" class="btn btn-primary">عرض التفاصيل</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="ecommerce">
+                    <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="متجر إلكتروني" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">متجر إلكتروني للإلكترونيات</h3>
+                        <span class="portfolio-category">متجر إلكتروني</span>
+                        <a href="#" class="btn btn-primary">عرض التفاصيل</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="mobile">
+                    <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="تطبيق اجتماعي" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">تطبيق تواصل اجتماعي</h3>
+                        <span class="portfolio-category">تطبيق جوال</span>
+                        <a href="#" class="btn btn-primary">عرض التفاصيل</a>
                     </div>
                 </div>
             </div>
             
             <div class="text-center mt-5">
-                <a href="#" class="btn btn-primary">Daha Fazla Proje Gör</a>
+                <a href="#" class="btn btn-primary">عرض المزيد من الأعمال</a>
             </div>
         </div>
     </section>
-    <!-- Testimonials Section -->
+
+    <!-- قسم آراء العملاء -->
     <section class="section testimonials">
         <div class="container">
-            <h2 class="section-title">Müşteri Yorumları</h2>
-            <p class="section-subtitle">Müşterilerimizin bizimle ilgili düşünceleri</p>
+            <h2 class="section-title">ما قاله عملاؤنا</h2>
+            <p class="section-subtitle">آراء عملائنا الكرام الذين وثقوا بنا لتنفيذ مشاريعهم الرقمية</p>
             
             <div class="testimonial-slider">
                 <div class="testimonial-slide active">
                     <p class="testimonial-content">
-                        "CodeNosh ekibiyle çalışmaktan son derece memnun kaldık. Profesyonel yaklaşımları ve zamanında teslimatları için teşekkür ederiz. Web sitemiz şirketimize büyük değer kattı."
+                        "لقد تفاجأت بجودة العمل وسرعة التنفيذ. فريق CodeNosh محترف جدًا واستطاع فهم احتياجاتي بدقة وتنفيذها بشكل أفضل مما توقعت. أنصح الجميع بالتعامل معهم."
                     </p>
                     <div class="testimonial-author">
-                        <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Müşteri 1" class="author-img">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="أحمد محمد" class="author-img">
                         <div class="author-info">
-                            <div class="author-name">Emre Öztürk</div>
-                            <div class="author-position">ABC Şirketi, CEO</div>
+                            <div class="author-name">أحمد محمد</div>
+                            <div class="author-position">مدير شركة التقنية المتطورة</div>
                         </div>
                     </div>
                 </div>
                 
                 <div class="testimonial-slide">
                     <p class="testimonial-content">
-                        "Mobil uygulamamızı CodeNosh ekibine yaptırdık ve sonuç harika oldu. Kullanıcı dostu arayüzü ve sorunsuz çalışmasıyla müşterilerimizden çok olumlu geri dönüşler alıyoruz."
+                        "تعاملت مع العديد من شركات التطوير، لكن CodeNosh كانت الأفضل من حيث الاحترافية والالتزام بالمواعيد. الموقع الذي طوروه ساعد في زيادة مبيعاتي بنسبة 40% خلال شهرين فقط."
                     </p>
                     <div class="testimonial-author">
-                        <img src="https://randomuser.me/api/portraits/women/63.jpg" alt="Müşteri 2" class="author-img">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="سارة عبدالله" class="author-img">
                         <div class="author-info">
-                            <div class="author-name">Selin Arslan</div>
-                            <div class="author-position">XYZ Startup, Kurucu</div>
+                            <div class="author-name">سارة عبدالله</div>
+                            <div class="author-position">مالكة متجر إلكتروني</div>
                         </div>
                     </div>
                 </div>
                 
                 <div class="testimonial-slide">
                     <p class="testimonial-content">
-                        "E-ticaret sitemizi CodeNosh'a emanet ettik ve hiç pişman olmadık. Satışlarımız %300 arttı ve teknik sorun yaşamadan işimizi büyütmeye devam ediyoruz. Kesinlikle tavsiye ederim."
+                        "التطبيق الذي قاموا بتطويره لشركتنا سهل عملياتنا الداخلية وزاد من إنتاجية الموظفين بنسبة كبيرة. الدعم الفني المقدم ممتاز ويستجيبون لأي طلب في أي وقت."
                     </p>
                     <div class="testimonial-author">
-                        <img src="https://randomuser.me/api/portraits/men/81.jpg" alt="Müşteri 3" class="author-img">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="خالد الحميد" class="author-img">
                         <div class="author-info">
-                            <div class="author-name">Can Bulut</div>
-                            <div class="author-position">123 Mağaza, Sahibi</div>
+                            <div class="author-name">خالد الحميد</div>
+                            <div class="author-position">مدير عمليات في شركة كبرى</div>
                         </div>
                     </div>
                 </div>
@@ -1365,117 +1460,117 @@
         </div>
     </section>
 
-    <!-- Pricing Section -->
+    <!-- قسم الأسعار -->
     <section class="section pricing" id="pricing">
         <div class="container">
-            <h2 class="section-title">Fiyatlandırma</h2>
-            <p class="section-subtitle">İhtiyaçlarınıza uygun esnek fiyatlandırma seçenekleri</p>
+            <h2 class="section-title">باقات الأسعار</h2>
+            <p class="section-subtitle">اختر الباقة التي تناسب احتياجاتك أو اطلب عرضًا مخصصًا لمشروعك</p>
             
             <div class="pricing-grid">
                 <div class="pricing-card">
-                    <h3 class="pricing-name">Başlangıç</h3>
-                    <div class="pricing-price">₺2,499 <span>/ proje</span></div>
+                    <h3 class="pricing-name">البداية</h3>
+                    <div class="pricing-price">5,000 <span>ريال/مشروع</span></div>
                     <ul class="pricing-features">
-                        <li class="pricing-feature">5 Sayfalık Web Sitesi</li>
-                        <li class="pricing-feature">Temel SEO</li>
-                        <li class="pricing-feature">1 Yıl Hosting</li>
-                        <li class="pricing-feature">Temel Tasarım</li>
-                        <li class="pricing-feature">1 Aylık Destek</li>
+                        <li class="pricing-feature">5 صفحات ويب</li>
+                        <li class="pricing-feature">تصميم متجاوب</li>
+                        <li class="pricing-feature">نموذج تواصل</li>
+                        <li class="pricing-feature">تحسين أساسي لمحركات البحث</li>
+                        <li class="pricing-feature">دعم فني لمدة شهر</li>
                     </ul>
-                    <a href="#contact" class="btn btn-outline">Teklif Al</a>
+                    <a href="#contact" class="btn btn-outline">اختر هذه الباقة</a>
                 </div>
                 
                 <div class="pricing-card featured">
-                    <h3 class="pricing-name">Profesyonel</h3>
-                    <div class="pricing-price">₺5,999 <span>/ proje</span></div>
+                    <h3 class="pricing-name">المتوسطة</h3>
+                    <div class="pricing-price">10,000 <span>ريال/مشروع</span></div>
                     <ul class="pricing-features">
-                        <li class="pricing-feature">10-15 Sayfalık Web Sitesi</li>
-                        <li class="pricing-feature">Gelişmiş SEO</li>
-                        <li class="pricing-feature">2 Yıl Hosting</li>
-                        <li class="pricing-feature">Özel Tasarım</li>
-                        <li class="pricing-feature">3 Aylık Destek</li>
+                        <li class="pricing-feature">10-15 صفحة ويب</li>
+                        <li class="pricing-feature">تصميم مخصص</li>
+                        <li class="pricing-feature">نظام إدارة محتوى</li>
+                        <li class="pricing-feature">تحسين متقدم لمحركات البحث</li>
+                        <li class="pricing-feature">دعم فني لمدة 3 أشهر</li>
                     </ul>
-                    <a href="#contact" class="btn btn-primary">Teklif Al</a>
+                    <a href="#contact" class="btn btn-primary">اختر هذه الباقة</a>
                 </div>
                 
                 <div class="pricing-card">
-                    <h3 class="pricing-name">Kurumsal</h3>
-                    <div class="pricing-price">₺12,999 <span>/ proje</span></div>
+                    <h3 class="pricing-name">المتقدمة</h3>
+                    <div class="pricing-price">20,000 <span>ريال/مشروع</span></div>
                     <ul class="pricing-features">
-                        <li class="pricing-feature">20+ Sayfalık Web Sitesi</li>
-                        <li class="pricing-feature">Premium SEO</li>
-                        <li class="pricing-feature">3 Yıl Hosting</li>
-                        <li class="pricing-feature">Özel Animasyonlar</li>
-                        <li class="pricing-feature">6 Aylık Destek</li>
+                        <li class="pricing-feature">عدد غير محدود من الصفحات</li>
+                        <li class="pricing-feature">تصميم فريد ومخصص</li>
+                        <li class="pricing-feature">نظام إدارة محتوى متكامل</li>
+                        <li class="pricing-feature">تحسين محركات البحث الشامل</li>
+                        <li class="pricing-feature">دعم فني لمدة 6 أشهر</li>
                     </ul>
-                    <a href="#contact" class="btn btn-outline">Teklif Al</a>
+                    <a href="#contact" class="btn btn-outline">اختر هذه الباقة</a>
                 </div>
             </div>
             
             <div class="text-center mt-5">
-                <p>Özel ihtiyaçlarınız için özelleştirilmiş çözümler sunuyoruz. <a href="#contact" class="text-primary">İletişime geçin</a></p>
+                <p>لديك مشروع خاص؟ <a href="#contact" class="text-primary">اطلب عرضًا مخصصًا</a></p>
             </div>
         </div>
     </section>
 
-    <!-- Blog Section -->
+    <!-- قسم المدونة -->
     <section class="section blog" id="blog">
         <div class="container">
-            <h2 class="section-title">Son Blog Yazıları</h2>
-            <p class="section-subtitle">Web geliştirme ve dijital dünyadan en son haberler ve ipuçları</p>
+            <h2 class="section-title">مدونتنا</h2>
+            <p class="section-subtitle">أحدث المقالات والنصائح في عالم تطوير الويب والتقنية</p>
             
             <div class="blog-grid">
                 <div class="blog-card">
-                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80" alt="Blog 1" class="blog-img">
+                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80" alt="اتجاهات تصميم الويب" class="blog-img">
                     <div class="blog-content">
                         <div class="blog-meta">
-                            <span class="blog-date"><i class="far fa-calendar-alt"></i> 15 Haziran 2023</span>
-                            <span class="blog-author"><i class="far fa-user"></i> Ahmet Yılmaz</span>
+                            <span class="blog-date"><i class="far fa-calendar-alt"></i> 15 يونيو 2023</span>
+                            <span class="blog-author"><i class="far fa-user"></i> أحمد علي</span>
                         </div>
-                        <h3 class="blog-title">2023'te Web Tasarım Trendleri</h3>
-                        <p class="blog-excerpt">Bu yıl web tasarım dünyasında öne çıkan en önemli trendleri ve nasıl uygulayabileceğinizi keşfedin.</p>
-                        <a href="#" class="read-more">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+                        <h3 class="blog-title">أهم اتجاهات تصميم الويب لعام 2023</h3>
+                        <p class="blog-excerpt">استكشف أحدث الاتجاهات في عالم تصميم الويب لهذا العام والتي ستساعدك في إنشاء موقع جذاب وفعال يلبي توقعات الزوار.</p>
+                        <a href="#" class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
                     </div>
                 </div>
                 
                 <div class="blog-card">
-                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Blog 2" class="blog-img">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="تحسين محركات البحث" class="blog-img">
                     <div class="blog-content">
                         <div class="blog-meta">
-                            <span class="blog-date"><i class="far fa-calendar-alt"></i> 2 Haziran 2023</span>
-                            <span class="blog-author"><i class="far fa-user"></i> Ayşe Kaya</span>
+                            <span class="blog-date"><i class="far fa-calendar-alt"></i> 2 يونيو 2023</span>
+                            <span class="blog-author"><i class="far fa-user"></i> سامية خالد</span>
                         </div>
-                        <h3 class="blog-title">UI/UX Tasarımında En İyi Uygulamalar</h3>
-                        <p class="blog-excerpt">Kullanıcı deneyimini artırmak için UI/UX tasarımında dikkat etmeniz gereken en önemli noktalar.</p>
-                        <a href="#" class="read-more">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+                        <h3 class="blog-title">دليل شامل لتحسين محركات البحث (SEO) في 2023</h3>
+                        <p class="blog-excerpt">تعرف على أحدث استراتيجيات تحسين محركات البحث التي ستساعد موقعك في الظهور في النتائج الأولى وزيادة حركة الزوار.</p>
+                        <a href="#" class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
                     </div>
                 </div>
                 
                 <div class="blog-card">
-                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Blog 3" class="blog-img">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="أطراف عمل الجافاسكريبت" class="blog-img">
                     <div class="blog-content">
                         <div class="blog-meta">
-                            <span class="blog-date"><i class="far fa-calendar-alt"></i> 20 Mayıs 2023</span>
-                            <span class="blog-author"><i class="far fa-user"></i> Mehmet Demir</span>
+                            <span class="blog-date"><i class="far fa-calendar-alt"></i> 20 مايو 2023</span>
+                            <span class="blog-author"><i class="far fa-user"></i> محمد حسن</span>
                         </div>
-                        <h3 class="blog-title">React vs Vue: Hangisini Seçmelisiniz?</h3>
-                        <p class="blog-excerpt">Frontend geliştirme için iki popüler framework'ü karşılaştırdık ve hangi projede hangisinin daha uygun olduğunu inceledik.</p>
-                        <a href="#" class="read-more">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+                        <h3 class="blog-title">مقارنة بين أشهر أطراف عمل الجافاسكريبت</h3>
+                        <p class="blog-excerpt">مقارنة مفصلة بين React و Vue و Angular لمساعدتك في اختيار الإطار المناسب لمشروعك القادم بناءً على احتياجاتك.</p>
+                        <a href="#" class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
                     </div>
                 </div>
             </div>
             
             <div class="text-center mt-5">
-                <a href="#" class="btn btn-primary">Tüm Yazıları Gör</a>
+                <a href="#" class="btn btn-primary">عرض جميع المقالات</a>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- قسم الاتصال -->
     <section class="section contact" id="contact">
         <div class="container">
-            <h2 class="section-title">İletişim</h2>
-            <p class="section-subtitle">Projeniz hakkında konuşmak için bizimle iletişime geçin</p>
+            <h2 class="section-title">تواصل معنا</h2>
+            <p class="section-subtitle">هل لديك استفسار أو ترغب في بدء مشروعك؟ تواصل معنا وسنكون سعداء بمساعدتك</p>
             
             <div class="contact-container">
                 <div class="contact-info">
@@ -1484,8 +1579,8 @@
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div class="contact-text">
-                            <h3>Adres</h3>
-                            <p>3817.Sk, KOMSERŞAKİR Caddesi, Şanlıurfa, Türkiye</p>
+                            <h3>العنوان</h3>
+                            <p>شارع التقنية، الرياض، المملكة العربية السعودية</p>
                         </div>
                     </div>
                     
@@ -1494,7 +1589,7 @@
                             <i class="fas fa-phone-alt"></i>
                         </div>
                         <div class="contact-text">
-                            <h3>Telefon</h3>
+                            <h3>الهاتف</h3>
                             <a href="tel:+905342173887">+90 534 217 38 87</a>
                         </div>
                     </div>
@@ -1504,7 +1599,7 @@
                             <i class="fas fa-envelope"></i>
                         </div>
                         <div class="contact-text">
-                            <h3>Email</h3>
+                            <h3>البريد الإلكتروني</h3>
                             <a href="mailto:khneterkhaled@gmail.com">khneterkhaled@gmail.com</a>
                         </div>
                     </div>
@@ -1514,41 +1609,41 @@
                             <i class="fas fa-clock"></i>
                         </div>
                         <div class="contact-text">
-                            <h3>Çalışma Saatleri</h3>
-                            <p>Pazartesi - Cuma: 09:00 - 18:00</p>
-                            <p>Cumartesi: 10:00 - 15:00</p>
+                            <h3>ساعات العمل</h3>
+                            <p>الأحد - الخميس: 8 صباحًا - 6 مساءً</p>
+                            <p>الجمعة - السبت: إجازة</p>
                         </div>
                     </div>
                 </div>
                 
                 <form class="contact-form">
                     <div class="form-group">
-                        <label for="name" class="form-label">Adınız</label>
+                        <label for="name" class="form-label">الاسم الكامل</label>
                         <input type="text" id="name" class="form-control" required>
                     </div>
                     
                     <div class="form-group">
-                        <label for="email" class="form-label">Email Adresiniz</label>
+                        <label for="email" class="form-label">البريد الإلكتروني</label>
                         <input type="email" id="email" class="form-control" required>
                     </div>
                     
                     <div class="form-group">
-                        <label for="subject" class="form-label">Konu</label>
+                        <label for="subject" class="form-label">الموضوع</label>
                         <input type="text" id="subject" class="form-control" required>
                     </div>
                     
                     <div class="form-group">
-                        <label for="message" class="form-label">Mesajınız</label>
+                        <label for="message" class="form-label">الرسالة</label>
                         <textarea id="message" class="form-control" required></textarea>
                     </div>
                     
-                    <button type="submit" class="btn btn-primary">Mesaj Gönder</button>
+                    <button type="submit" class="btn btn-primary">إرسال الرسالة</button>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- الفوتر -->
     <footer>
         <div class="container">
             <div class="footer-container">
@@ -1557,44 +1652,44 @@
                         <i class="fas fa-code"></i>
                         <span>CodeNosh</span>
                     </a>
-                    <p>Profesyonel web çözümleri sunan lider bir web geliştirme ajansıyız. Müşterilerimize en iyi hizmeti sunmak için sürekli olarak kendimizi geliştiriyoruz.</p>
+                    <p>شركة متخصصة في تقديم حلول الويب والتطبيقات المبتكرة التي تساعد الأعمال على النمو والازدهار في العالم الرقمي.</p>
                     <div class="footer-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
                 
                 <div class="footer-links">
-                    <h3 class="footer-title">Hızlı Linkler</h3>
+                    <h3 class="footer-title">روابط سريعة</h3>
                     <ul>
-                        <li><a href="#home">Ana Sayfa</a></li>
-                        <li><a href="#services">Hizmetler</a></li>
-                        <li><a href="#portfolio">Portfolyo</a></li>
-                        <li><a href="#team">Ekip</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#contact">İletişim</a></li>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#services">الخدمات</a></li>
+                        <li><a href="#portfolio">الأعمال</a></li>
+                        <li><a href="#pricing">الأسعار</a></li>
+                        <li><a href="#blog">المدونة</a></li>
+                        <li><a href="#contact">اتصل بنا</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-links">
-                    <h3 class="footer-title">Hizmetler</h3>
+                    <h3 class="footer-title">الخدمات</h3>
                     <ul>
-                        <li><a href="#">Web Geliştirme</a></li>
-                        <li><a href="#">Mobil Uygulama</a></li>
-                        <li><a href="#">UI/UX Tasarım</a></li>
-                        <li><a href="#">SEO Optimizasyon</a></li>
-                        <li><a href="#">E-Ticaret Çözümleri</a></li>
-                        <li><a href="#">Hosting & Destek</a></li>
+                        <li><a href="#">تطوير مواقع الويب</a></li>
+                        <li><a href="#">تطبيقات الجوال</a></li>
+                        <li><a href="#">متاجر إلكترونية</a></li>
+                        <li><a href="#">تحسين محركات البحث</a></li>
+                        <li><a href="#">تصميم واجهات المستخدم</a></li>
+                        <li><a href="#">استضافة وحلول سحابية</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-newsletter">
-                    <h3 class="footer-title">Bültenimize Abone Olun</h3>
-                    <p>En son haberler, güncellemeler ve promosyonlar için e-posta listemize kaydolun.</p>
+                    <h3 class="footer-title">النشرة البريدية</h3>
+                    <p>اشترك في نشرتنا البريدية لتصلك أحدث الأخبار والعروض الخاصة بنا.</p>
                     <form class="newsletter-form">
-                        <input type="email" placeholder="Email adresiniz" class="newsletter-input" required>
+                        <input type="email" placeholder="بريدك الإلكتروني" class="newsletter-input" required>
                         <button type="submit" class="newsletter-btn">
                             <i class="fas fa-paper-plane"></i>
                         </button>
@@ -1603,13 +1698,13 @@
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2025 CodeNosh. Tüm hakları saklıdır. Bu Website HALIT ALKNETER Tarafından yapılmıştır<a href="#"> Gizlilik Politikası</a> | <a href="#">Kullanım Şartları</a></p>
+                <p>&copy; 2025 CodeNosh. - تم تصميم هذا الموقع من قبل خالد عثمان <a href="#">سياسة الخصوصية</a> | <a href="#">شروط الاستخدام</a></p>
             </div>
         </div>
     </footer>
 
     <script>
-        // Preloader
+        // شاشة التحميل
         window.addEventListener('load', function() {
             const preloader = document.querySelector('.preloader');
             preloader.classList.add('hide');
@@ -1619,7 +1714,7 @@
             }, 500);
         });
 
-        // Mobile Menu Toggle
+        // زر القائمة المتنقلة
         const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
         const navLinks = document.querySelector('.nav-links');
         
@@ -1629,7 +1724,7 @@
                 '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
         });
 
-        // Close mobile menu when clicking on a link
+        // إغلاق القائمة عند النقر على رابط
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
@@ -1637,13 +1732,13 @@
             });
         });
 
-        // Sticky Header
+        // تثبيت الهيدر عند التمرير
         window.addEventListener('scroll', function() {
             const header = document.getElementById('header');
             header.classList.toggle('header-scrolled', window.scrollY > 50);
         });
 
-        // Back to Top Button
+        // زر العودة للأعلى
         const backToTopBtn = document.querySelector('.back-to-top');
         
         window.addEventListener('scroll', function() {
@@ -1658,16 +1753,16 @@
             });
         });
 
-        // Portfolio Filter
+        // تصفية أعمال البورتفوليو
         const filterBtns = document.querySelectorAll('.filter-btn');
         const portfolioItems = document.querySelectorAll('.portfolio-item');
         
         filterBtns.forEach(btn => {
             btn.addEventListener('click', function() {
-                // Remove active class from all buttons
+                // إزالة النشط من جميع الأزرار
                 filterBtns.forEach(btn => btn.classList.remove('active'));
                 
-                // Add active class to clicked button
+                // إضافة النشط للزر المختار
                 this.classList.add('active');
                 
                 const filter = this.getAttribute('data-filter');
@@ -1682,7 +1777,7 @@
             });
         });
 
-        // Testimonial Slider
+        // شريط آراء العملاء
         const testimonialSlides = document.querySelectorAll('.testimonial-slide');
         const testimonialDots = document.querySelectorAll('.testimonial-dot');
         let currentSlide = 0;
@@ -1700,13 +1795,13 @@
             dot.addEventListener('click', () => showSlide(index));
         });
         
-        // Auto slide change
+        // تغيير الشرائط تلقائياً
         setInterval(() => {
             currentSlide = (currentSlide + 1) % testimonialSlides.length;
             showSlide(currentSlide);
         }, 5000);
 
-        // Smooth scrolling for anchor links
+        // التمرير السلس للروابط
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -1723,38 +1818,38 @@
             });
         });
 
-        // Form submission
+        // إرسال نموذج الاتصال
         const contactForm = document.querySelector('.contact-form');
         if (contactForm) {
             contactForm.addEventListener('submit', function(e) {
                 e.preventDefault();
                 
-                // Here you would typically send the form data to a server
-                alert('Mesajınız başarıyla gönderildi! En kısa sürede sizinle iletişime geçeceğiz.');
+                // هنا يمكنك إضافة كود إرسال النموذج إلى الخادم
+                alert('تم إرسال رسالتك بنجاح! سنتواصل معك في أقرب وقت ممكن.');
                 this.reset();
             });
         }
 
-        // Newsletter form submission
+        // إرسال النشرة البريدية
         const newsletterForm = document.querySelector('.newsletter-form');
         if (newsletterForm) {
             newsletterForm.addEventListener('submit', function(e) {
                 e.preventDefault();
                 
                 const emailInput = this.querySelector('.newsletter-input');
-                alert(`Aboneliğiniz başarıyla kaydedildi: ${emailInput.value}`);
+                alert(`شكراً للاشتراك في نشرتنا البريدية: ${emailInput.value}`);
                 emailInput.value = '';
             });
         }
 
-        // Animation on scroll
+        // حركات عند التمرير
         function animateOnScroll() {
-            const elements = document.querySelectorAll('.service-card, .portfolio-item, .team-member, .pricing-card, .blog-card');
+            const elements = document.querySelectorAll('.service-card, .portfolio-item, .pricing-card, .blog-card');
             const windowHeight = window.innerHeight;
             
             elements.forEach(element => {
                 const elementPosition = element.getBoundingClientRect().top;
-                const animationPoint = windowHeight - 100;
+                const animationPoint = windowHeight - 150;
                 
                 if (elementPosition < animationPoint) {
                     element.style.opacity = '1';
@@ -1763,15 +1858,15 @@
             });
         }
         
-        // Set initial state for animation
-        document.querySelectorAll('.service-card, .portfolio-item, .team-member, .pricing-card, .blog-card').forEach(element => {
+        // تعيين الحالة الأولية للحركات
+        document.querySelectorAll('.service-card, .portfolio-item, .pricing-card, .blog-card').forEach(element => {
             element.style.opacity = '0';
-            element.style.transform = 'translateY(30px)';
-            element.style.transition = 'all 0.6s ease';
+            element.style.transform = 'translateY(40px)';
+            element.style.transition = 'all 0.8s ease';
         });
         
         window.addEventListener('scroll', animateOnScroll);
-        animateOnScroll(); // Run once on page load
+        animateOnScroll(); // تشغيل مرة واحدة عند تحميل الصفحة
     </script>
 </body>
 </html>
